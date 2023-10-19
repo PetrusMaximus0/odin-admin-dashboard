@@ -1,0 +1,39 @@
+header,
+aside,
+section,
+article,
+main{
+    border: 2px solid red;
+}
+
+li{
+    list-style: none;
+}
+
+.dashboard{
+    padding: 0;
+   
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.grid-container{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+}
+
+main {
+    display:grid;
+
+}
+
+header {
+    grid-column: 1/-1;
+
+}
