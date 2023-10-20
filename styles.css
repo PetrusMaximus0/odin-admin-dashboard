@@ -3,7 +3,7 @@ aside,
 section,
 article,
 main{
-    border: 2px solid red;
+    
 }
 
 body{
@@ -12,7 +12,7 @@ body{
 
 }
 
-h1{
+h1, h2{
     margin: 0;
 }
 
@@ -27,6 +27,21 @@ li{
 a{
     text-decoration: none;
     color: currentColor;
+}
+
+header {
+    grid-column: 2/-1;
+
+}
+
+main {
+   grid-column: 2/-1;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr auto;
+   grid-template-rows: auto auto;
+
+   background-color: lightgrey;
 }
 
 .grid-container{
@@ -75,23 +90,38 @@ a{
     width: 40px;
 }
 
-header {
-    grid-column: 2/-1;
-
-}
-
-main {
-   grid-column: 2/-1;
-
-   display: grid;
-   grid-template-columns: 1fr 1fr auto;
-   grid-template-rows: auto auto;
-}
-
 .project-item{
-    padding: 12px;
-    border: 1px solid blue;
-    height: 200px;/*this should be removed later to fit the content size*/
+    padding: 20px;
+
+    border-left: 6px solid orange;
+    border-radius: 6px;
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.project-item > h2{
+    padding: 0.4rem 0;
+    font-size: 1.2rem;
+}
+
+.project-item > span {
+    color: grey;
+    font-size: 0.90rem;
+
+}
+
+.item-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    padding-top: 30px;
+}
+
+.item-button-wrapper > button{
+    border: none;
+    height: 2rem;
+    background-color: white;  
 }
 
 .projects{
