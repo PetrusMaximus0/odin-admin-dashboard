@@ -54,18 +54,33 @@
         </nav>
 
         <header>
-            <span class ="search-icon fa-solid fa-house">SEARCH</span> 
-            <form action="" method ="get">
-                <input type="search">
+            <div class="header-top">
+                <button type ="submit" form="form1" class ="fa-solid fa-magnifying-glass"></button>
+                <form action="" method ="get" id ="form1">  
+                    <input type="search">
+                </form>
+                <span class ="fa-regular fa-lg fa-bell"></span>
+                <span class ="fa-solid fa-shield-cat fa-2xl"></span>
+                <span>Morgan Oakley</span>
+            </div>
+            <div class="header-bottom">
+                <span class ="fa-solid fa-shield-cat fa-2xl"></span>
+                <div>
+                    <p class ="greeting">Hi there,</p>
+                    <p class ="social-handle">Morgan Oakley <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">(@morgan)</a></p>
+                </div>
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
 
-            </form>
         </header>
         
         <main>
             <section class = "projects">
                 <h1>Your Projects</h1>                
                 <ul>
-                    <li class="project-item">
+                    <li class="item">
                         <h2>Super Cool Project</h2>
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam fugit consectetur explicabo incidunt culpa laborum natus, provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
                         <div class ="item-button-wrapper">
@@ -74,7 +89,7 @@
                             <button class="fa-regular fa-lg fa-share-from-square" type="button"></button>
                         </div>
                     </li>
-                    <li class="project-item">
+                    <li class="item">
                         <h2>Super Cool Project</h2>
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam fugit consectetur explicabo incidunt culpa laborum natus, provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
                         <div class ="item-button-wrapper">
@@ -83,7 +98,7 @@
                             <button class="fa-regular fa-lg fa-share-from-square" type="button"></button>
                         </div>
                     </li>
-                    <li class="project-item">
+                    <li class="item">
                         <h2>Super Cool Project</h2>
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam fugit consectetur explicabo incidunt culpa laborum natus, provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
                         <div class ="item-button-wrapper">
@@ -92,7 +107,7 @@
                             <button class="fa-regular fa-lg fa-share-from-square" type="button"></button>
                         </div>
                     </li>
-                    <li class="project-item">
+                    <li class="item">
                         <h2>Super Cool Project</h2>
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam fugit consectetur explicabo incidunt culpa laborum natus, provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
                         <div class ="item-button-wrapper">
@@ -101,7 +116,7 @@
                             <button class="fa-regular fa-lg fa-share-from-square" type="button"></button>
                         </div>
                     </li>
-                    <li class="project-item">
+                    <li class="item">
                         <h2>Super Cool Project</h2>
                         <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam fugit consectetur explicabo incidunt culpa laborum natus, provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
                         <div class ="item-button-wrapper">
@@ -110,7 +125,16 @@
                             <button class="fa-regular fa-lg fa-share-from-square" type="button"></button>
                         </div>
                     </li>
-                    <li class="project-item">
+                    <li class="item">
+                        <h2>Super Cool Project</h2>
+                        <span>..provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
+                        <div class ="item-button-wrapper">
+                            <button class="fa-regular fa-lg fa-star" type="button"></button>
+                            <button class="fa-regular fa-lg fa-eye" type="button"></button>
+                            <button class="fa-regular fa-lg fa-share-from-square" type="button"></button>
+                        </div>
+                    </li>
+                    <li class="item">
                         <h2>Super Cool Project</h2>
                         <span>..provident expedita earum illo assumenda cupiditate, quod enim dolorum repellat tempore commodi, corrupti aperiam!</span>
                         <div class ="item-button-wrapper">
@@ -124,13 +148,60 @@
                 </ul>
             </section>             
                 
-            <section class ="announcements">
-                <h1>Announcements</h1>
-            </section>
+            <div class="grid-container">
+                <section class ="announcements">
+                    <h1>Announcements</h1>
+                    <ul>
+                        <li class="item">
+                            <h2>Site Maintenance</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, necessitatibus nisi, aliquam dolore aut, sit iure</span>
+                        </li>
+                        <li class="item">
+                            <h2>Community Share Day</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, necessitatibus nisi, aliquam dolore aut, sit iure</span>
+                        </li>
+                        <li class="item">
+                            <h2>Updated Privacy Policy</h2>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aspernatur sunt rerum, illum commodi ipsa possimus, molestiae quas tempore est consectetur iste iusto modi cum perspiciatis nulla obcaecati eius ducimus?</span>
+                        </li>
+                    </ul>
+                </section>
                 
-            <section class = "trending">
-                <h1>Trending</h1>
-            </section>
+                <section class = "trending">
+                    <h1>Trending</h1>
+                    <ul>
+                        <li class="item">
+                            <span class="fa-regular fa-circle fa-2xl"> </span>
+                            <span class="social-handle">
+                                <a href="#">@tegan</a>
+                                <p>World Peace Builder</p>
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="fa-regular fa-circle fa-2xl"> </span>
+                            <span class="social-handle">
+                                <a href="#">@morgan</a>
+                                <p>Super Cool project</p>
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="fa-regular fa-circle fa-2xl"> </span>
+                            <span class="social-handle">
+                                <a href="#">@kendall</a>
+                                <p>Life Changing App</p>
+                            </span>
+                        </li>
+                        <li class="item">
+                            <span class="fa-regular fa-circle fa-2xl"> </span>
+                            <span class="social-handle">
+                                <a href="#">@alex</a>
+                                <p>No Traffic Maker</p>
+                            </span>
+                        </li>
+                
+                    </ul>
+                </section>
+            </div>
         </main>
     </div>  
 </body>
